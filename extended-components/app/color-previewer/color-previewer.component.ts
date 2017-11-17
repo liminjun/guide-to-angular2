@@ -1,10 +1,9 @@
 import { Component, Input } from "@angular/core";
 
-declare const module;
+
 
 @Component({
     selector: 'search-box',
-    moduleId: module.id,
     // template:`<input placeholder="{{text}}" #input>
     // <button class="btn-clear" (click)="clear(input)">Clear</button>`
     templateUrl: 'search-box.component.html',
@@ -12,7 +11,7 @@ declare const module;
 })
 
 
-export class SearchBox {
+export class ColorPreviewer {
     @Input('placeholder')
     text = "Type your search";
 
